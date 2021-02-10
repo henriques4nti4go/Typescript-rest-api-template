@@ -1,0 +1,22 @@
+{
+   "name": "RestApiTemplateTypeORM",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "@types/express": "^4.17.11",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "pg": "^8.5.1",
+      "reflect-metadata": "^0.1.10",
+      "ts-node-dev": "^1.1.1",
+      "typeorm": "0.2.30"
+   },
+   "scripts": {
+      "start": "ts-node-dev --respawn --transpile-only src/server.ts"
+   }
+}
