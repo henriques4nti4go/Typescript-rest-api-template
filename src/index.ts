@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "reflect-metadata";
 import {createConnection} from "typeorm";
 import express from 'express';
@@ -14,3 +15,6 @@ createConnection().then(async connection => {
     
 
 }).catch(error => console.log(error));
+=======
+
+>>>>>>> 650d84544ee14bb7d3d3a43467f6f941b09f4869
