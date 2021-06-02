@@ -1,14 +1,13 @@
 import { Router,Request,Response } from 'express';
 import Resouces from './controllers/Resource';
 import HomeController from './controllers/HomeController';
-import RoutesComponents from './RoutesComponents';
+
 const routes = Router();
 const resource = new Resouces();
 
-
 // routes.use(resource.createResource('/',HomeController));
 
-routes.route('/teste')
+routes.get('/teste', (request,response) => new HomeController(request,response).index() )
 
 // const routesAmigables = new RoutesComponents(routes);
 

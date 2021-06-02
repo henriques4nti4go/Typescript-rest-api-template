@@ -1,6 +1,14 @@
 import {Request,Response} from 'express';
+import {ValidateFieldsRequest} from '../classes/ValidateFieldsRequest.class';
+ import {ProcessingReturnData} from '../classes/ProcessingReturnData.class';
+export default class Controllers {
+    public validation_fields_request = new ValidateFieldsRequest();
+    public processData:ProcessingReturnData;
+    
+    constructor(request,response:Response){
+        this.processData = new ProcessingReturnData(request,response)
+    }
 
-export default abstract class Controllers {
     /**
      * index
      */
